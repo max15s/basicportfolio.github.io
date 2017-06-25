@@ -7,10 +7,13 @@ html{
   font-family: 'Helvetica Neve', sans-serif;
 }
 
+
+/**** MAIN PROFILE PAGE STYLE ****/
+
 .main_profile_box{
   width:400px;
   height: auto;
-  background: rgba(0, 0, 0, 0.4);
+  background: rgba(0, 0, 0, 0.6);
   padding: 40px;
   color: white;
   margin: 0 auto;
@@ -31,16 +34,28 @@ html{
   object-fit: cover;
 }
 
-h1{
+.main_profile_box h1{
+  font-family: Papyrus, fantasy;
   font-weight: 100;
   font-size: 40px;
   letter-spacing: 5;
 }
 
+.main_profile_box h3{
+  font-family:"Lucida Console";
+}
+
+.main_profile_box p{
+  letter-spacing: 1;
+}
+
 .main_profile_social_icons{
   font-size: 40px;
+  letter-spacing: 7;
 }
 
 .main_profile_social_icons a{
   color: white;
 }
+
+/**** END MAIN PROFILE PAGE STYLE ****/
