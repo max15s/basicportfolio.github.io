@@ -1,0 +1,44 @@
+html{
+  background: url(../images/mainBackground.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  font-family: 'Helvetica Neve', sans-serif;
+}
+
+.main_profile_box{
+  width:400px;
+  height: 400px;
+  background: rgba(0, 0, 0, 0.4);
+  padding: 40px;
+  color: white;
+  margin: 0 auto;
+  margin-top: 140px;
+  text-align: center;
+}
+
+.main_profile_avatar_box{
+  overflow: hidden;
+  text-align: center;
+}
+
+.main_profile_pic{
+  border-radius: 50%;
+  height:200px;
+  /*width:200px;*/
+}
+
+h1{
+  font-weight: 100;
+  font-size: 40px;
+  letter-spacing: 5;
+}
+
+.main_profile_social_icons{
+  font-size: 40px;
+}
+
+.main_profile_social_icons a{
+  color: white;
+}
