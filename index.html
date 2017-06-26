@@ -1,43 +1,100 @@
+<!DOCTYPE html>
 <html>
 
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <!-- CSS --->
+  <!-- CSS -->
   <link rel="stylesheet" type="text/css" href="css/style.css">
   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 
 </head>
 
 <body>
-  <div class="main_profile_box">
+  <section id="main_page" class="main_page">
+    <div class="main_profile_box">
 
-    <div class="main_profile_avatar_box">
-      <img src="images/mainProfilePic.jpg" class="main_profile_pic">
+      <div class="main_profile_avatar_box">
+        <img src="images/mainProfilePic.jpg" class="main_profile_pic">
+      </div>
+
+      <h2><i>Hey, I'm</i></h2>
+      <h1>Mayank Sharma</h1>
+      <hr>
+      <h3>Software Engineer</h3>
+
+      <p>
+        My passion is to work on Object-Oriented design and development projects.
+      </p>
+
+      <div class="main_profile_social_icons">
+        <a href="https://www.facebook.com/mayank.1502" target="_blank"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+        <a href="https://github.com/max15s" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
+        <a href="https://www.linkedin.com/in/mayanksharmaitcs/" target="_blank"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+      </div>
     </div>
 
-    <h1>Mayank Sharma</h1>
-    <hr>
-    <h3>I'm a Software Engineer</h3>
-
-    <p>
-      My passion is to work on Object-Oriented design and development projects.
-    </p>
-
-    <div class="main_profile_social_icons">
-      <a href="https://www.facebook.com/mayank.1502" target="_blank"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
-      <a href="https://github.com/max15s" target="_blank"><i class="fa fa-github" aria-hidden="true"></i></a>
-      <a href="https://www.linkedin.com/in/mayanksharmaitcs/" target="_blank"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+    <div class="main_scrolldown_box">
+      <section id="page1" class="demo">
+        <a href="#nav_defined_pages"><span></span>Scroll</a>
+      </section>
     </div>
-  </div>
+  </section>
 
-  <div class="main_scrolldown_box">
-    <section id="page1" class="demo">
-      <a href="#page2"><span></span>Scroll</a>
+  <section id=nav_defined_pages class="nav_defined_pages">
+
+    <section id="nav_bar" class="nav_bar">
+      <div id="custom-bootstrap-menu" class="navbar navbar-default" role="navigation">
+          <div class="container-fluid">
+              <div class="navbar-header">
+                  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-menubuilder">
+                      <!--<span class="sr-only">Toggle navigation</span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>-->
+                  </button>
+              </div>
+              <div class="collapse navbar-collapse navbar-menubuilder">
+                  <ul class="nav navbar-nav navbar-left">
+                      <li><a href="#AboutMe">About ME</a>
+                      </li>
+                      <li><a href="/products">Products</a>
+                      </li>
+                      <li><a href="/about-us">About Us</a>
+                      </li>
+                      <li><a href="/contact">Contact Us</a>
+                      </li>
+                  </ul>
+              </div>
+          </div>
+      </div>
     </section>
-  </div>
 
-  <section id="page2">
-    <p>sometext for page2</p>
+    <section id="AboutMe" class="AboutMe_page">
+      <h1>about me</h1>
+
+      <div class="about_me_para">
+        <p>I'm a Software Engineer and avid photographer currently based in Phoenix, Arizona.</p>
+        <p>I enjoy taking complex problems and turning them into simple and beautiful designs. I also love the logic and structure of coding, and always strive to write elegant and efficient code. </p>
+        <p>When I am not coding, you'll probably find me in the wilderness taking in the magnificence of nature or on the soccer feild.</p>
+      </div>
+
+      <div class="about_me_education">
+        <h2 align="center">Education</h2>
+        <div class="content">
+            <div class="item">
+                <h3 class="title"><i class="fa fa-graduation-cap"></i> MS Computer Science</h3>
+                <h4 class="university">Florida State University, FL, USA <span class="year">(2011-2013)</span></h4>
+            </div><!--//item-->
+            <div class="item">
+                <h3 class="title"><i class="fa fa-graduation-cap"></i> BTech Information Technology</h3>
+                <h4 class="university">Guru Gobind Singh Indraprastha University, Delhi, India <span class="year">(2005-2009)</span></h4>
+            </div><!--//item-->
+        </div>
+      </div>
+    </section>
+
   </section>
 </body>
 
