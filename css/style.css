@@ -1,18 +1,26 @@
 html{
+  /*height: 100%;*/
+}
+
+body{
+  /*height: 100%;*/
+  margin: 0px;
+}
+
+/**** MAIN PROFILE PAGE STYLE ****/
+
+.main_page{
   background: url(../images/mainBackground.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
   font-family: 'Helvetica Neve', sans-serif;
-  /*height: 100%;*/
+  padding-top: 40px;
+  padding-bottom: 140px;
+  width:100%;
+  margin: 0;
 }
-
-body{
-  /*height: 100%;*/
-}
-
-/**** MAIN PROFILE PAGE STYLE ****/
 
 .main_profile_box{
   width:400px;
@@ -21,7 +29,7 @@ body{
   padding: 40px;
   color: white;
   margin: 0 auto;
-  margin-top: 50px;
+  margin-top: 10px;
   text-align: center;
   border-radius: 10%;
 }
@@ -40,9 +48,15 @@ body{
 
 .main_profile_box h1{
   font-family: Papyrus, fantasy;
-  font-weight: 100;
   font-size: 40px;
-  letter-spacing: 5;
+  letter-spacing: 0.1em;
+  margin-top: 0px;
+  margin-bottom: 5px;
+}
+
+.main_profile_box h2{
+  margin-bottom: 10px;
+  font-weight: 100;
 }
 
 .main_profile_box h3{
@@ -64,8 +78,8 @@ body{
 
 .main_scrolldown_box a {
 	position: absolute;
-	bottom: 20px;
-	left: 48%;
+	bottom: 10px;
+	left: 48.5%;
 	z-index: 2;
 	display: inline-block;
 	-webkit-transform: translate(0, -50%);
@@ -88,7 +102,7 @@ body{
 .main_scrolldown_box section a span{
   position: absolute;
 	top: 0;
-	left: 50%;
+	left: 48.5%;
 	width: 46px;
 	height: 46px;
 	margin-left: -23px;
@@ -160,3 +174,108 @@ body{
 }
 
 /**** END MAIN PROFILE PAGE STYLE ****/
+
+/**** NAV BAR STYLE ****/
+
+.nav_bar{
+  width: 100%;
+  text-align: center;
+  left: 0;
+}
+
+#custom-bootstrap-menu.navbar-default .navbar-brand {
+    color: rgba(7, 55, 99, 1);
+}
+#custom-bootstrap-menu.navbar-default {
+    font-size: 18px;
+    background-color: rgba(255, 255, 255, 1);
+    border-width: 4px;
+    border-radius: 31px;
+}
+#custom-bootstrap-menu.navbar-default .navbar-nav>li>a {
+    color: rgba(7, 55, 99, 1);
+    background-color: rgba(248, 248, 248, 0);
+}
+#custom-bootstrap-menu.navbar-default .navbar-nav>li>a:hover,
+#custom-bootstrap-menu.navbar-default .navbar-nav>li>a:focus {
+    color: rgba(255, 255, 255, 1);
+    background-color: rgba(7, 55, 99, 1);
+}
+#custom-bootstrap-menu.navbar-default .navbar-nav>.active>a,
+#custom-bootstrap-menu.navbar-default .navbar-nav>.active>a:hover,
+#custom-bootstrap-menu.navbar-default .navbar-nav>.active>a:focus {
+    color: rgba(255, 255, 255, 1);
+    background-color: rgba(7, 55, 99, 1);
+}
+#custom-bootstrap-menu.navbar-default .navbar-toggle {
+    border-color: #073763;
+}
+#custom-bootstrap-menu.navbar-default .navbar-toggle:hover,
+#custom-bootstrap-menu.navbar-default .navbar-toggle:focus {
+    background-color: #073763;
+}
+#custom-bootstrap-menu.navbar-default .navbar-toggle .icon-bar {
+    background-color: #073763;
+}
+#custom-bootstrap-menu.navbar-default .navbar-toggle:hover .icon-bar,
+#custom-bootstrap-menu.navbar-default .navbar-toggle:focus .icon-bar {
+    background-color: #ffffff;
+}
+/**** END NAV BAR STYLE ****/
+
+/**** ABOUT ME PAGE STYLE ****/
+
+.AboutMe_page{
+  position: absolute;
+  background: url(../images/About_Me_back.jpg) no-repeat center center;
+  width: 100%;
+  height: 100%;
+}
+
+.AboutMe_page h1{
+  align-self: center;
+  padding-left: 70%;
+  padding-top: 5%;
+  font-size: 40px;
+  letter-spacing: 0.1em;
+  margin-top: 0px;
+  margin-bottom: 5px;
+}
+
+.about_me_para{
+  background:#fefabc;
+  margin-left: 10%;
+  padding:15px;
+  font-family: 'Gloria Hallelujah', cursive;
+  font-size:15px;
+  color: #000;
+  width:500px;
+  -moz-transform: rotate(5deg);
+  -webkit-transform: rotate(5deg);
+  -o-transform: rotate(5deg);
+  -ms-transform: rotate(5deg);
+  transform: rotate(5deg);
+  box-shadow: 0px 4px 6px #333;
+  -moz-box-shadow: 0px 4px 6px #333;
+  -webkit-box-shadow: 0px 4px 6px #333;
+}
+
+.about_me_education{
+  background:#fefabc;
+  margin-left: 25%;;
+  padding:15px;
+  font-family: 'Gloria Hallelujah', cursive;
+  font-size:15px;
+  color: #000;
+  width:400px;
+  -moz-transform: rotate(-7deg);
+  -webkit-transform: rotate(-7deg);
+  -o-transform: rotate(-7deg);
+  -ms-transform: rotate(-7deg);
+  transform: rotate(-7deg);
+  box-shadow: 0px 4px 6px #333;
+  -moz-box-shadow: 0px 4px 6px #333;
+  -webkit-box-shadow: 0px 4px 6px #333;
+}
+
+/**** END ABOUT ME PAGE STYLE ****/
