@@ -174,55 +174,6 @@ body{
 /**** END MAIN PROFILE PAGE STYLE ****/
 
 
-/**** NAV BAR STYLE ****/
-
-.nav_bar{
-  width: 100%;
-  text-align: center;
-  left: 0;
-}
-
-#custom-bootstrap-menu.navbar-default .navbar-brand {
-    color: rgba(7, 55, 99, 1);
-}
-#custom-bootstrap-menu.navbar-default {
-    font-size: 18px;
-    background-color: rgba(255, 255, 255, 1);
-    border-width: 4px;
-    border-radius: 31px;
-}
-#custom-bootstrap-menu.navbar-default .navbar-nav>li>a {
-    color: rgba(7, 55, 99, 1);
-    background-color: rgba(248, 248, 248, 0);
-}
-#custom-bootstrap-menu.navbar-default .navbar-nav>li>a:hover,
-#custom-bootstrap-menu.navbar-default .navbar-nav>li>a:focus {
-    color: rgba(255, 255, 255, 1);
-    background-color: rgba(7, 55, 99, 1);
-}
-#custom-bootstrap-menu.navbar-default .navbar-nav>.active>a,
-#custom-bootstrap-menu.navbar-default .navbar-nav>.active>a:hover,
-#custom-bootstrap-menu.navbar-default .navbar-nav>.active>a:focus {
-    color: rgba(255, 255, 255, 1);
-    background-color: rgba(7, 55, 99, 1);
-}
-#custom-bootstrap-menu.navbar-default .navbar-toggle {
-    border-color: #073763;
-}
-#custom-bootstrap-menu.navbar-default .navbar-toggle:hover,
-#custom-bootstrap-menu.navbar-default .navbar-toggle:focus {
-    background-color: #073763;
-}
-#custom-bootstrap-menu.navbar-default .navbar-toggle .icon-bar {
-    background-color: #073763;
-}
-#custom-bootstrap-menu.navbar-default .navbar-toggle:hover .icon-bar,
-#custom-bootstrap-menu.navbar-default .navbar-toggle:focus .icon-bar {
-    background-color: #ffffff;
-}
-/**** END NAV BAR STYLE ****/
-
-
 /**** PAGE WRAPPER ****/
 p {
     display: block;
@@ -287,63 +238,78 @@ p {
 }
 
 /**** ABOUT ME PAGE STYLE ****/
-.AboutMe_page{
-  position: absolute;
-  background: url(../images/About_Me_back.jpg) no-repeat center center;
-  width: 100%;
-  height: 100%;
+.aboutme-page{
+	background-color: #F0FFFF;
+	padding-bottom: 0 !important;
+	transition: .5s padding-bottom;
+	padding: 80px 0;
+    line-height: 1.45;
+    color: #555;
 }
 
-.AboutMe_page img{
-  width: auto;
-  height: auto;
+.aboutme-heading{
+	/*width: 1028px;*/
+	width: 100%;
+	margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 40px;
+    margin-left: 0px;
+	
+	transition-property: width, margin, padding;
+    transition-duration: 0.2s, 0.2s, 0.2s;
+    transition-timing-function: cubic-bezier(0.7, 0, 0.3, 1), cubic-bezier(0.7, 0, 0.3, 1), cubic-bezier(0.7, 0, 0.18, 0.74);
+    transition-delay: initial, initial, initial;
 }
 
-.AboutMe_page h1{
-  align-self: center;
-  padding-left: 70%;
-  padding-top: 5%;
-  font-size: 40px;
-  letter-spacing: 0.1em;
-  margin-top: 0px;
-  margin-bottom: 5px;
+.aboutme-title{
+	margin-bottom: 30px;
+    position: relative;
+	text-align: center;
+	line-height: 1.2;
+    margin-bottom: 15px;
+	color: #333;
+	font-family: 'gotham rounded',sans-serif;
 }
 
-.about_me_para{
-  background:#fefabc;
-  margin-left: 10%;
-  padding:15px;
-  font-family: 'Gloria Hallelujah', cursive;
-  font-size:15px;
-  color: #000;
-  width:500px;
-  -moz-transform: rotate(5deg);
-  -webkit-transform: rotate(5deg);
-  -o-transform: rotate(5deg);
-  -ms-transform: rotate(5deg);
-  transform: rotate(5deg);
-  box-shadow: 0px 4px 6px #333;
-  -moz-box-shadow: 0px 4px 6px #333;
-  -webkit-box-shadow: 0px 4px 6px #333;
+.aboutme-greeting{
+	font-family: raleway, helvetica, sans-serif;
+	line-height: inherit;
+    font-weight: inherit;
+	font-size: 36px;
+	display: inline-block;
+    zoom: 1;
+    max-width: 100%;
+	text-transform: none !important;
+	position: relative;
+	word-wrap: break-word;
+	line-height: 1.2;
 }
 
-.about_me_education{
-  background:#fefabc;
-  margin-left: 25%;;
-  padding:15px;
-  font-family: 'Gloria Hallelujah', cursive;
-  font-size:15px;
-  color: #000;
-  width:400px;
-  -moz-transform: rotate(-7deg);
-  -webkit-transform: rotate(-7deg);
-  -o-transform: rotate(-7deg);
-  -ms-transform: rotate(-7deg);
-  transform: rotate(-7deg);
-  box-shadow: 0px 4px 6px #333;
-  -moz-box-shadow: 0px 4px 6px #333;
-  -webkit-box-shadow: 0px 4px 6px #333;
+.aboutme-greeting:before{
+	background: #333;
+	right: 100%;
+	content: ' ';
+    position: absolute;
+    top: 50%;
+    height: 2px;
+    width: 80px;
+    margin: 0 10px;
+    display: inline-block;
+    zoom: 1;
 }
+
+.aboutme-greeting:after{
+	background: #333;
+	content: ' ';
+    position: absolute;
+    top: 50%;
+    height: 2px;
+    width: 80px;
+    margin: 0 10px;
+    display: inline-block;
+    zoom: 1;
+}
+
 /**** END ABOUT ME PAGE STYLE ****/
 
 /**** EXPERIENCE PAGE #2 ****/
