@@ -8,7 +8,6 @@ body{
 }
 
 /**** MAIN PROFILE PAGE STYLE ****/
-
 .main_page{
   background: url(../images/mainBackground.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
@@ -172,8 +171,8 @@ body{
 		opacity: 0;
 	}
 }
-
 /**** END MAIN PROFILE PAGE STYLE ****/
+
 
 /**** NAV BAR STYLE ****/
 
@@ -223,13 +222,65 @@ body{
 }
 /**** END NAV BAR STYLE ****/
 
-/**** ABOUT ME PAGE STYLE ****/
 
+/**** PAGE WRAPPER ****/
+.page-wrapper{
+	font-size: 15px;
+	display: block;
+}
+
+.pages{
+	display: block;
+	opacity: 1;
+}
+
+.pages h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, cite, code, del, dfn, em, img, q, s, samp, small, strike, strong, sub, sup, tt, var, dd, dl, dt, li, ol, ul, fieldset, form, label, input, textarea, legend, button, table, caption, tbody, tfoot, thead, tr, th, td{
+	margin: 0;
+    padding: 0;
+    border: 0;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 100%;
+    line-height: 1;
+    font-family: inherit;
+}
+
+.pages ol, ul{
+	list-style: none;
+}
+
+.page-anchor{
+	position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.page li{
+	position:relative;
+	outline:0;
+}
+
+.page:after{
+	content: ' ';
+    height: 100px;
+    display: block;
+}
+
+.page-transition{
+	transition: .5s padding-bottom;
+}
+
+/**** ABOUT ME PAGE STYLE ****/
 .AboutMe_page{
   position: absolute;
   background: url(../images/About_Me_back.jpg) no-repeat center center;
   width: 100%;
   height: 100%;
+}
+
+.AboutMe_page img{
+  width: auto;
+  height: auto;
 }
 
 .AboutMe_page h1{
@@ -277,5 +328,141 @@ body{
   -moz-box-shadow: 0px 4px 6px #333;
   -webkit-box-shadow: 0px 4px 6px #333;
 }
-
 /**** END ABOUT ME PAGE STYLE ****/
+
+
+/**** CONTACT PAGE #5 ****/
+.contact-page{
+	background-color: #fff;
+	text-align: center;
+	padding: 80px 0;
+	line-height: 1.45;
+    color: #555;
+}
+
+.container{
+	/*width: 1028px;*/
+	width: 100%;
+	float: left;
+    display: inline;
+}
+
+.container:after{
+	content: ' ';
+    height: 200px;
+    display: block;
+}
+
+.contact-heading{
+	/*width: 1028px;*/
+	width: 100%;
+	margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+	
+	transition-property: width, margin, padding;
+    transition-duration: 0.2s, 0.2s, 0.2s;
+    transition-timing-function: cubic-bezier(0.7, 0, 0.3, 1), cubic-bezier(0.7, 0, 0.3, 1), cubic-bezier(0.7, 0, 0.18, 0.74);
+    transition-delay: initial, initial, initial;
+}
+
+.contact-title{
+	margin-bottom: 30px;
+    position: relative;
+	text-align: center;
+	line-height: 1.2;
+    margin-bottom: 15px;
+	color: #333;
+	font-family: 'gotham rounded',sans-serif;
+}
+
+.contact-greeting{
+	font-family: raleway, helvetica, sans-serif;
+	line-height: inherit;
+    font-weight: inherit;
+	font-size: 36px;
+	display: inline-block;
+    zoom: 1;
+    max-width: 100%;
+	text-transform: none !important;
+	position: relative;
+	word-wrap: break-word;
+	line-height: 1.2;
+}
+
+.contact-greeting:before{
+	background: #333;
+	right: 100%;
+	content: ' ';
+    position: absolute;
+    top: 50%;
+    height: 2px;
+    width: 80px;
+    margin: 0 10px;
+    display: inline-block;
+    zoom: 1;
+}
+
+.contact-greeting:after{
+	background: #333;
+	content: ' ';
+    position: absolute;
+    top: 50%;
+    height: 2px;
+    width: 80px;
+    margin: 0 10px;
+    display: inline-block;
+    zoom: 1;
+}
+
+.contact-icon-container{
+	text-align: center;
+	vertical-align: top;
+    float: none;
+    zoom: 1;
+	width: auto !important;
+    display: inline-block !important;	
+	margin-left: 14px;
+    margin-right: 14px;
+	transition: width .2s cubic-bezier(.7,0,.3,1),margin .2s cubic-bezier(.7,0,.3,1),padding .2s cubic-bezier(.7,0,.3,1);
+	line-height: 1.45;
+    color: #555;
+	min-height: 1px;
+	display: block;
+    text-align: center;
+}
+
+.contact-icon-container a{
+	text-decoration: none;
+	outline: 0;
+	margin: 0;
+    padding: 0;
+    border: 0;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 100%;
+    line-height: 1;
+    font-family: inherit;
+}
+
+.icon-box{
+	width: 315px;
+	max-width: 110px;
+	position: relative;
+    margin: 0 auto;
+	display: block;
+}
+
+.contact-icon{
+	opacity: 1;
+    transition: opacity 100ms;
+	position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+	border-radius: 5%;
+}
+/**** END CONTACT PAGE #5 ****/
