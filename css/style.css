@@ -224,6 +224,14 @@ body{
 
 
 /**** PAGE WRAPPER ****/
+p {
+    display: block;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+}
+
 .page-wrapper{
 	font-size: 15px;
 	display: block;
@@ -260,14 +268,22 @@ body{
 	outline:0;
 }
 
-.page:after{
-	content: ' ';
-    height: 100px;
-    display: block;
-}
-
 .page-transition{
 	transition: .5s padding-bottom;
+}
+
+.container{
+	/*width: 1028px;*/
+	position:relative;
+	width: 70%;    
+	margin-left: auto;
+    margin-right: auto;
+}
+
+.container:after{
+	content: ' ';
+    /*height: 100px;*/
+    display: block;
 }
 
 /**** ABOUT ME PAGE STYLE ****/
@@ -330,6 +346,241 @@ body{
 }
 /**** END ABOUT ME PAGE STYLE ****/
 
+/**** EXPERIENCE PAGE #2 ****/
+.experience-page{
+	background-color: #fff;
+	padding-bottom: 0 !important;
+	transition: .5s padding-bottom;
+	padding: 80px 0;
+    line-height: 1.45;
+    color: #555;
+}
+
+.experience-heading{
+	/*width: 1028px;*/
+	width: 100%;
+	margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 40px;
+    margin-left: 0px;
+	
+	transition-property: width, margin, padding;
+    transition-duration: 0.2s, 0.2s, 0.2s;
+    transition-timing-function: cubic-bezier(0.7, 0, 0.3, 1), cubic-bezier(0.7, 0, 0.3, 1), cubic-bezier(0.7, 0, 0.18, 0.74);
+    transition-delay: initial, initial, initial;
+}
+
+.experience-title{
+	margin-bottom: 30px;
+    position: relative;
+	text-align: center;
+	line-height: 1.2;
+    margin-bottom: 15px;
+	color: #333;
+	font-family: 'gotham rounded',sans-serif;
+}
+
+.experience-greeting{
+	font-family: raleway, helvetica, sans-serif;
+	line-height: inherit;
+    font-weight: inherit;
+	font-size: 36px;
+	display: inline-block;
+    zoom: 1;
+    max-width: 100%;
+	text-transform: none !important;
+	position: relative;
+	word-wrap: break-word;
+	line-height: 1.2;
+}
+
+.experience-greeting:before{
+	background: #333;
+	right: 100%;
+	content: ' ';
+    position: absolute;
+    top: 50%;
+    height: 2px;
+    width: 80px;
+    margin: 0 10px;
+    display: inline-block;
+    zoom: 1;
+}
+
+.experience-greeting:after{
+	background: #333;
+	content: ' ';
+    position: absolute;
+    top: 50%;
+    height: 2px;
+    width: 80px;
+    margin: 0 10px;
+    display: inline-block;
+    zoom: 1;
+}
+
+.exp-repeat-item{
+    margin-bottom: 35px;
+	display: block;
+    zoom: 1;
+	position: relative;
+}
+
+.clearfix:before, .clearfix:after{
+	content: '\0020';
+    display: block;
+    overflow: hidden;
+    visibility: hidden;
+    width: 0;
+    height: 0;
+}
+
+.exp-row{
+    justify-content: flex-end;
+    display: flex;
+}
+
+.row-media-wrapper{
+	width: 20%;
+	max-width: 250px;
+	padding-left: 59px;
+	float: left;
+    display: inline;
+    margin-left: 13px;
+    margin-right: 13px;
+	transition: width .2s cubic-bezier(.7,0,.3,1),margin .2s cubic-bezier(.7,0,.3,1),padding .2s cubic-bezier(.7,0,.3,1);
+	min-height: 1px;
+    text-align: center;
+}
+
+.exp-media-box{
+	max-width: 720px;
+    max-height: 585px;
+	position: relative;
+    margin: 0 auto;
+}
+
+.exp-media-icon{
+	opacity: 1;
+    transition: opacity 100ms;
+	position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: block;
+    max-width: 100%;
+    vertical-align: middle;
+	border: 0;
+	margin: 0;
+    padding: 0;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 100%;
+    line-height: 1;
+    font-family: inherit;
+	border-radius: 5%;
+}
+
+.row-data-wrapper{
+	width: 55%;
+	align-self: center;
+    margin-bottom: 10px;
+    order: 1;
+	float: left;
+    display: inline;
+    margin-left: 14px;
+    margin-right: 14px;
+    transition: width .2s cubic-bezier(.7,0,.3,1),margin .2s cubic-bezier(.7,0,.3,1),padding .2s cubic-bezier(.7,0,.3,1);
+	padding-left: 19px;
+}
+
+.exp-item-title{
+	margin-bottom: 5px;
+	color: #678;
+	font-family: 'gotham rounded',sans-serif;
+}
+
+.exp-item-title h3{
+    font-family: "open sans", helvetica, sans-serif;
+    line-height: inherit;
+    font-weight: inherit;
+	font-size: 24px;
+	text-transform: none !important;
+	word-wrap: break-word;
+	-webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+	margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+.exp-item-title p{
+	line-height: 1.45;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 100%;
+	font-family: inherit;
+	display: block;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+}
+
+.exp-item-title a{
+	line-height: 1.45;
+    color: #37c;
+    text-decoration: none;
+    cursor: auto;
+}
+
+.exp-item-subtitle{
+	margin-bottom: 5px;
+	color: #5e9516;
+	font-family: sans-serif,sans-serif;
+	font-weight: bold;
+}
+
+.exp-item-subtitle h6{
+	font-family: "open sans", helvetica, sans-serif;
+	line-height: inherit;
+    font-weight: inherit;
+	font-size: 16px;
+	text-transform: none !important;
+	word-wrap: break-word;
+	-webkit-margin-before: 2.33em;
+    -webkit-margin-after: 2.33em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    font-weight: bold;
+	line-height: 1.45;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+.exp-item-para{
+	/*padding: 80px 0;*/
+    line-height: 1.45;
+    color: #555;
+	font-family: "open sans", helvetica, sans-serif;
+	line-height: 1.45;
+	text-transform: none !important;
+	word-wrap: break-word;
+}
+
+.exp-item-para p{
+	line-height: 1.45;
+}
+/**** END EXPERIENCE PAGE #2 ****/
+
+
 
 /**** CONTACT PAGE #5 ****/
 .contact-page{
@@ -340,16 +591,9 @@ body{
     color: #555;
 }
 
-.container{
-	/*width: 1028px;*/
-	width: 100%;
-	float: left;
-    display: inline;
-}
-
-.container:after{
+.contact-page:after{
 	content: ' ';
-    height: 200px;
+    height: 100px;
     display: block;
 }
 
@@ -358,7 +602,7 @@ body{
 	width: 100%;
 	margin-top: 0px;
     margin-right: 0px;
-    margin-bottom: 0px;
+    margin-bottom: 40px;
     margin-left: 0px;
 	
 	transition-property: width, margin, padding;
