@@ -15,14 +15,15 @@ body{
   -o-background-size: cover;
   background-size: cover;
   font-family: 'Helvetica Neve', sans-serif;
-  padding-top: 40px;
-  padding-bottom: 140px;
+  padding-top: 8vh;
+  padding-bottom: 10vh;
   width:100%;
   margin: 0;
+  height: 100vh;
 }
 
 .main_profile_box{
-  width:400px;
+  width:58vh;
   height: auto;
   background: rgba(0, 0, 0, 0.6);
   padding: 40px;
@@ -239,7 +240,7 @@ p {
 
 /**** ABOUT ME PAGE STYLE ****/
 .aboutme-page{
-	background-color: #F0FFFF;
+	background-color: #FFFFFF;
 	padding-bottom: 0 !important;
 	transition: .5s padding-bottom;
 	padding: 80px 0;
@@ -545,7 +546,91 @@ p {
 	line-height: 1.45;
 }
 /**** END EXPERIENCE PAGE #2 ****/
+#console-wrapper{
+	border-radius: 5px;
+	width:60%;
+	margin: 0 auto;
+	padding-top:15px;
+	font-size:30px;
+	background: #ccc;
+	height: 700px;
+	font-family: 'Monaco', 'Courier New';
+	text-align: left;
+	font-size:16px;
+	color: #fafafa;
+}
 
+#console{
+	width:80%;
+	padding: 10px;
+	height: 670px;
+	margin:0 auto;
+	background: #383737;
+}
+
+span.answer {
+  color:#ccc;
+}
+
+/**** SKILLS PAGE #3 ****/
+
+/**** END SKILLS PAGE #3 ****/
+
+
+/**** PROJECT PAGE #4 ****/
+
+.projects-wrapper{
+	margin-left:15vh;
+	margin-right : 15vh;
+}
+
+.project-list{
+}
+
+.project-row{
+	margin-bottom : 20px;
+}
+
+.project-title{
+	/*background-color: rgb(189, 219, 250);*/
+	background-color: white;
+    border-radius: 12px;
+    border: 2px solid rgb(132, 187, 243);
+    /*display: inline-block;*/
+    cursor: pointer;
+    /*color: rgb(255, 255, 255);*/
+    font-family: "Trebuchet MS";
+    font-size: 23px;
+    font-weight: bold;
+	padding: 12px;
+    padding-left: 10%;
+    text-decoration: none;
+	margin-left: 10%;
+	margin-right: 10%;
+}
+
+.project-title:hover,onclick{
+	background-color: #528fcc;
+    border-radius: 12px;
+    border: 2px solid rgb(132, 187, 243);
+    /*display: inline-block;*/
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+    font-family: "Trebuchet MS";
+    font-size: 23px;
+    font-weight: bold;
+	padding: 12px;
+    padding-left: 10%;
+    text-decoration: none;
+	margin-left: 10%;
+	margin-right: 10%;
+}
+
+.project-title span{
+	padding-left: 5vh;
+}
+
+/**** END PROJECT PAGE #4 ****/
 
 
 /**** CONTACT PAGE #5 ****/
