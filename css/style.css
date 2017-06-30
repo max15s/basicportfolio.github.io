@@ -5,9 +5,8 @@ html{
 }
 
 body{
-  /*height: 100%;*/
+  min-width:320px;
   margin: 0px;
-  /*background-color: #ffffff;*/
   -webkit-font-smoothing: antialiased;
 }
 
@@ -227,7 +226,7 @@ body{
 #header .nav {
 	display: inline-block;
 	letter-spacing: 0.2em;	
-	width: 82%;
+	width: 80%;
 	text-align: center;
 	padding-right: 10px;
 }
@@ -247,69 +246,76 @@ body{
 	color: #000;
 }
 
-@media (max-width: 550px){
+@media (max-width: 1000px){
+	#navButton3{
+		display: none;
+	}
+}
+
+@media (max-width: 700px){
+	#navButton4{
+		display: none;
+	}
+}
+
+@media (max-width: 560px){
+	#navButton6{
+		display: none;
+	}
+}
+
+@media (max-width: 850px){
 	.myicon img{
 		display:inherit;
+		width: 40px;
+		height: 40px;
 	}
 	
 	.myicon span{
 		display:none;
+	}
+	
+	li.navButton {
+		display: inline-block;
+		font-size: 12px;
+		line-height: 10px;
+		padding-right: 10px;
+	}
+	
+	#header {
+		line-height: 60px;
+	}
+	
+	#header .name{
+		padding-left:0px;
+		line-height:15px;
+		padding-top:10px;
+		padding-bottom: 10px;
 	}
 }
 
 @media (max-width: 480px){
 	#header {
-		position: sticky;
-		line-height: 30px;
-		padding-top: 15px;
-		text-align: left;
-		padding-left: 10px;
-		padding-bottom: 15px;
-	}
-
-	#header .name {
-		width:40%;
-		/*float: left;*/
-		letter-spacing: 0.2em;
-		font-size: 12px;
-		display: inline-block;
+		line-height: 60px;
 	}
 	
-	.myicon img{
-		display:inherit;
+	#header .name{
+		padding-left:0px;
+		line-height:15px;
+		padding-top:10px;
+		padding-bottom: 10px;
 	}
 	
-	.myicon span{
-		display:none;
-	}
-
 	#header .nav {
-		display: inline-block;
-		/*float: left;*/
-		width: 55%;
-		padding-right: 10px;
+		width: 87%;
 	}
 
 	li.navButton {
-		display: inline-block;
 		font-size: 10px;
-		line-height: 10px;
-		padding-right: 10px;
-	}
-
-	li.navButton a {
-		color: #b1b1b1;
 	}
 }
 
 @media only screen and (min-device-width : 320px) and (max-device-width : 568px){
-	.mobile-nav {
-		display: inline-block;
-		-webkit-padding-start: 5px;
-		-webkit-margin-before: 0;
-		float: right;
-	}
-
 	#header {
 		position: sticky;
 		padding-top: 20px;
@@ -320,7 +326,6 @@ body{
 
 	#header .name {
 		width:40%;
-		/*float: left;*/
 		font-size: 10px;
 		letter-spacing: 0.2em;
 		padding-top: 2px;
@@ -329,7 +334,6 @@ body{
 
 	#header .nav {
 		display: inline-block;
-		/*float: left;*/
 		width: 55%;
 		padding-right: 10px;
 	}
@@ -341,7 +345,7 @@ body{
 		padding-right: 5px;
 	}
 
-	li.mobile-header a {
+	li.navButton a {
 		color: #b1b1b1;
 	}
 }
