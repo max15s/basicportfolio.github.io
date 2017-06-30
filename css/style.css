@@ -185,34 +185,76 @@ body{
 	top: 0;
 	left: 0;
 	font-family: 'Montserrat', sans-serif;
-	letter-spacing: 0.3em;
 	text-transform: uppercase;
-	text-align: center;
 	width: 100%;
 	background-color: #fafafa;
 	line-height: 80px;
-	font-size: 22px;
 	z-index: 1000;
 }
 
-.mobile-nav {
-	display: none;
-}
-
-.inner {
-	max-width: 1024px;
-	margin: 0 auto;
-}
-
-.name {z-index: 88888;}
-
-#header a {
+#header a{
 	text-decoration: none;
-	color: #333;
 }
 
-#header a img {
-	border: none;
+#header .name{
+	width:10%;
+	text-align: left;
+	float:left;
+	letter-spacing: 0.3em;
+	font-size: 12px;
+	display: inline-block;
+	padding-left:10px;
+	line-height:25px;
+	padding-top:15px;
+	padding-bottom: 15px;
+}
+
+#header .myicon{
+	width: 55%;
+	text-align:left;
+	padding-left:10px;
+}
+
+.myicon span{
+	color: #8A8A8A;
+	font-weight: bold;
+}
+
+.myicon img{
+	display:none;
+}
+
+#header .nav {
+	display: inline-block;
+	letter-spacing: 0.2em;	
+	width: 82%;
+	text-align: center;
+	padding-right: 10px;
+}
+
+.navButton {
+	display: inline-block;
+	font-size: 15px;
+	line-height: 10px;
+	padding-right: 20px;
+}
+
+.navButton a {
+	color: #8A8A8A;
+}
+
+.navButton a:hover {
+	color: #000;
+}
+
+@media (max-width: 550px){
+	.myicon img{
+		display:inherit;
+	}
+	
+	.myicon span{
+		display:none;
+	}
 }
 
 @media (max-width: 480px){
@@ -232,22 +274,30 @@ body{
 		font-size: 12px;
 		display: inline-block;
 	}
+	
+	.myicon img{
+		display:inherit;
+	}
+	
+	.myicon span{
+		display:none;
+	}
 
 	#header .nav {
 		display: inline-block;
-		float: left;
+		/*float: left;*/
 		width: 55%;
 		padding-right: 10px;
 	}
 
-	li.mobile-header {
+	li.navButton {
 		display: inline-block;
 		font-size: 10px;
 		line-height: 10px;
 		padding-right: 10px;
 	}
 
-	li.mobile-header a {
+	li.navButton a {
 		color: #b1b1b1;
 	}
 }
@@ -414,11 +464,12 @@ p {
 /**** END PAGE WRAPPER ****/
 
 /**** ABOUT ME PAGE STYLE ****/
+
 .aboutme-page{
 	background-color: #FFFFFF;
 	padding-bottom: 0 !important;
 	transition: .5s padding-bottom;
-	padding: 80px 0;
+	padding: 160px 0;
     line-height: 1.45;
     color: #555;
 }
@@ -493,7 +544,7 @@ p {
 	background-color: #fff;
 	padding-bottom: 0 !important;
 	transition: .5s padding-bottom;
-	padding: 80px 0;
+	padding: 160px 0;
     line-height: 1.45;
     color: #555;
 }
@@ -812,7 +863,7 @@ span.answer {
 .contact-page{
 	background-color: #fff;
 	text-align: center;
-	padding: 80px 0;
+	padding: 160px 0;
 	line-height: 1.45;
     color: #555;
 }
