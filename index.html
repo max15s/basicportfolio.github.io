@@ -13,7 +13,7 @@
 	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 
 	<!-- SCRIPTS -->
-	<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
 	<script type="text/javascript">
 		$(function(){
 			$('#project-list').find('UL').hide();
@@ -58,7 +58,7 @@
 		
 		<div id="header" class="header">
 			<div class="inner name">
-				<div class="myicon"><a href="#main_page"><img alt="ME" src="images/mainProfilePic" style="width:30px, height:30px"><span>Mayank<br />Sharma</span></a></div>
+				<div class="myicon"><a href="#main_page"><img alt="ME" src="images/mainProfilePic.jpg" style="width:30px, height:30px"><span>Mayank<br />Sharma</span></a></div>
 			</div>
 			<div class ="nav">
 				<ul>
@@ -486,6 +486,33 @@
 			</ul>
 		</div>
 	</div>
+	
+	<script>
+	$(document).ready(function(){
+	  // Add smooth scrolling to all links
+	  $("a").on('click', function(event) {
+
+		// Make sure this.hash has a value before overriding default behavior
+		if (this.hash !== "") {
+		  // Prevent default anchor click behavior
+		  event.preventDefault();
+
+		  // Store hash
+		  var hash = this.hash;
+
+		  // Using jQuery's animate() method to add smooth page scroll
+		  // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+		  $('html, body').animate({
+			scrollTop: $(hash).offset().top
+		  }, 800, function(){
+	   
+			// Add hash (#) to URL when done scrolling (default click behavior)
+			window.location.hash = hash;
+		  });
+		} // End if
+	  });
+	});
+	</script>
 	
 </body>
 
