@@ -178,7 +178,6 @@ body{
 /**** END MAIN PROFILE PAGE STYLE ****/
 
 /**** NAVBAR WRAPPER ****/
-
 #header {
 	position: sticky;
 	top: 0;
@@ -315,6 +314,20 @@ body{
 	}
 }
 
+@media (max-width: 380px){
+	#header .name{
+		display:none;
+	}
+	
+	#header .nav{
+		width: 100%;
+	}
+	
+	.myicon img{
+		display:none;
+	}
+}
+
 @media only screen and (min-device-width : 320px) and (max-device-width : 568px){
 	#header {
 		position: sticky;
@@ -398,9 +411,7 @@ body{
 		color: #b1b1b1;
 	}
 }
-
 /**** END NAVBAR WRAPPER ****/
-
 
 /**** PAGE WRAPPER ****/
 p {
@@ -417,7 +428,6 @@ p {
 }
 
 .pages{
-	display: block;
 	opacity: 1;
 }
 
@@ -459,17 +469,17 @@ p {
     margin-right: auto;
 }
 
-.container:after{
-	content: ' ';
-    /*height: 100px;*/
-    display: block;
+@media (max-width: 720px){
+	.container{
+		width:80%;
+	}
 }
 
-/**** END PAGE WRAPPER ****/
+.container:after{
+	content: ' ';
+}
 
-/**** ABOUT ME PAGE STYLE ****/
-
-.aboutme-page{
+.li-page-wrapper{
 	background-color: #FFFFFF;
 	padding-bottom: 0 !important;
 	transition: .5s padding-bottom;
@@ -477,8 +487,10 @@ p {
     line-height: 1.45;
     color: #555;
 }
+/**** END PAGE WRAPPER ****/
 
-.aboutme-heading{
+/**** HEADING WRAPPER ****/
+.heading{
 	/*width: 1028px;*/
 	width: 100%;
 	margin-top: 0px;
@@ -492,7 +504,7 @@ p {
     transition-delay: initial, initial, initial;
 }
 
-.aboutme-title{
+.heading-title{
 	margin-bottom: 30px;
     position: relative;
 	text-align: center;
@@ -502,7 +514,7 @@ p {
 	font-family: 'gotham rounded',sans-serif;
 }
 
-.aboutme-greeting{
+.heading-greeting{
 	font-family: raleway, helvetica, sans-serif;
 	line-height: inherit;
     font-weight: inherit;
@@ -516,7 +528,7 @@ p {
 	line-height: 1.2;
 }
 
-.aboutme-greeting:before{
+.heading-greeting:before{
 	background: #333;
 	right: 100%;
 	content: ' ';
@@ -529,7 +541,7 @@ p {
     zoom: 1;
 }
 
-.aboutme-greeting:after{
+.heading-greeting:after{
 	background: #333;
 	content: ' ';
     position: absolute;
@@ -540,82 +552,12 @@ p {
     display: inline-block;
     zoom: 1;
 }
+/**** END HEADING WRAPPER ****/
 
+/**** ABOUT ME PAGE STYLE ****/
 /**** END ABOUT ME PAGE STYLE ****/
 
 /**** EXPERIENCE PAGE #2 ****/
-.experience-page{
-	background-color: #fff;
-	padding-bottom: 0 !important;
-	transition: .5s padding-bottom;
-	padding: 160px 0;
-    line-height: 1.45;
-    color: #555;
-}
-
-.experience-heading{
-	/*width: 1028px;*/
-	width: 100%;
-	margin-top: 0px;
-    margin-right: 0px;
-    margin-bottom: 40px;
-    margin-left: 0px;
-	
-	transition-property: width, margin, padding;
-    transition-duration: 0.2s, 0.2s, 0.2s;
-    transition-timing-function: cubic-bezier(0.7, 0, 0.3, 1), cubic-bezier(0.7, 0, 0.3, 1), cubic-bezier(0.7, 0, 0.18, 0.74);
-    transition-delay: initial, initial, initial;
-}
-
-.experience-title{
-	margin-bottom: 30px;
-    position: relative;
-	text-align: center;
-	line-height: 1.2;
-    margin-bottom: 15px;
-	color: #333;
-	font-family: 'gotham rounded',sans-serif;
-}
-
-.experience-greeting{
-	font-family: raleway, helvetica, sans-serif;
-	line-height: inherit;
-    font-weight: inherit;
-	font-size: 36px;
-	display: inline-block;
-    zoom: 1;
-    max-width: 100%;
-	text-transform: none !important;
-	position: relative;
-	word-wrap: break-word;
-	line-height: 1.2;
-}
-
-.experience-greeting:before{
-	background: #333;
-	right: 100%;
-	content: ' ';
-    position: absolute;
-    top: 50%;
-    height: 2px;
-    width: 80px;
-    margin: 0 10px;
-    display: inline-block;
-    zoom: 1;
-}
-
-.experience-greeting:after{
-	background: #333;
-	content: ' ';
-    position: absolute;
-    top: 50%;
-    height: 2px;
-    width: 80px;
-    margin: 0 10px;
-    display: inline-block;
-    zoom: 1;
-}
-
 .exp-repeat-item{
     margin-bottom: 35px;
 	display: block;
@@ -803,12 +745,10 @@ span.answer {
 }
 
 /**** SKILLS PAGE #3 ****/
-
 /**** END SKILLS PAGE #3 ****/
 
 
 /**** PROJECT PAGE #4 ****/
-
 .projects-wrapper{
 	margin-left:15vh;
 	margin-right : 15vh;
@@ -859,86 +799,17 @@ span.answer {
 .project-title span{
 	padding-left: 5vh;
 }
-
 /**** END PROJECT PAGE #4 ****/
-
 
 /**** CONTACT PAGE #5 ****/
 .contact-page{
-	background-color: #fff;
 	text-align: center;
-	padding: 160px 0;
-	line-height: 1.45;
-    color: #555;
 }
 
 .contact-page:after{
 	content: ' ';
     height: 100px;
     display: block;
-}
-
-.contact-heading{
-	/*width: 1028px;*/
-	width: 100%;
-	margin-top: 0px;
-    margin-right: 0px;
-    margin-bottom: 40px;
-    margin-left: 0px;
-	
-	transition-property: width, margin, padding;
-    transition-duration: 0.2s, 0.2s, 0.2s;
-    transition-timing-function: cubic-bezier(0.7, 0, 0.3, 1), cubic-bezier(0.7, 0, 0.3, 1), cubic-bezier(0.7, 0, 0.18, 0.74);
-    transition-delay: initial, initial, initial;
-}
-
-.contact-title{
-	margin-bottom: 30px;
-    position: relative;
-	text-align: center;
-	line-height: 1.2;
-    margin-bottom: 15px;
-	color: #333;
-	font-family: 'gotham rounded',sans-serif;
-}
-
-.contact-greeting{
-	font-family: raleway, helvetica, sans-serif;
-	line-height: inherit;
-    font-weight: inherit;
-	font-size: 36px;
-	display: inline-block;
-    zoom: 1;
-    max-width: 100%;
-	text-transform: none !important;
-	position: relative;
-	word-wrap: break-word;
-	line-height: 1.2;
-}
-
-.contact-greeting:before{
-	background: #333;
-	right: 100%;
-	content: ' ';
-    position: absolute;
-    top: 50%;
-    height: 2px;
-    width: 80px;
-    margin: 0 10px;
-    display: inline-block;
-    zoom: 1;
-}
-
-.contact-greeting:after{
-	background: #333;
-	content: ' ';
-    position: absolute;
-    top: 50%;
-    height: 2px;
-    width: 80px;
-    margin: 0 10px;
-    display: inline-block;
-    zoom: 1;
 }
 
 .contact-icon-container{
