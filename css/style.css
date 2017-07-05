@@ -569,6 +569,20 @@ p {
     display: inline-block;
     zoom: 1;
 }
+
+@media only screen and (max-width: 727px){
+	.heading-greeting:before{
+		display:none;
+	}
+	
+	.heading-greeting:after{
+		margin: 15px auto 5px auto;
+		position: relative;
+		top: 0;
+		left: 0;
+		display: block;
+	}
+}
 /**** END HEADING WRAPPER ****/
 
 /**** ABOUT ME PAGE STYLE ****/
@@ -919,6 +933,7 @@ span.answer {
     display: inline-block !important;	
 	margin-left: 14px;
     margin-right: 14px;
+	margin-bottom: 20px;
 	transition: width .2s cubic-bezier(.7,0,.3,1),margin .2s cubic-bezier(.7,0,.3,1),padding .2s cubic-bezier(.7,0,.3,1);
 	line-height: 1.45;
     color: #555;
