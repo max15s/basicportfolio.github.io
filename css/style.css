@@ -484,7 +484,11 @@ p {
 
 @media (max-width: 720px){
 	.container{
-		width:80%;
+		width:100%;
+		margin-left:0;
+		margin-right:0;
+		padding-left:0;
+		padding-right:0;
 	}
 }
 
