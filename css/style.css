@@ -181,14 +181,25 @@ body{
 	}
 }
 
-@media (max-width: 730px){
+@media (max-width: 1020px){
+	.main_profile_box{
+		width:50%;
+	}
+}
+
+@media (max-width: 740px){
 	.main_profile_box{
 		width:90%;
 		padding:20px;
+		border-radius:5%;
 	}
 	
 	.main_scrolldown_box  a {
 		left:45%;
+	}
+	
+	.main_page{
+		background: url(../images/mainBackground.jpg) no-repeat center center scroll;
 	}
 }
 
