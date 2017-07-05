@@ -633,6 +633,7 @@ p {
 	font-size: 18px;
 	padding-top: 15px;
     padding-bottom: 15px;
+	text-align: justify;
 }
 
 .aboutme-2para{
@@ -653,6 +654,24 @@ p {
 
 .aboutme-2para:hover {
     box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+@media only screen and (max-width: 727px){
+	.aboutme-card{
+		display:block;
+	}
+	
+	.aboutme-pic{
+		width:100%;
+	}
+	
+	.aboutme-pic img{
+		border-radius: 5px 5px 0 0;
+	}
+	
+	.aboutme-text{
+		width: inherit;
+	}
 }
 
 .education-wrapper{
@@ -689,6 +708,18 @@ p {
 	width: 100%;
 	height:100%;
 	padding-left:10%;
+}
+
+@media only screen and (max-width: 727px){
+	.education-wrapper{
+		width: 100%;
+		display:block;
+	}
+	
+	.certification{
+		display:block;
+		width:80%;
+	}
 }
 /**** END ABOUT ME PAGE STYLE ****/
 
