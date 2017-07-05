@@ -801,22 +801,25 @@ p {
 /**** END EXPERIENCE PAGE #2 ****/
 #console-wrapper{
 	border-radius: 5px;
-	width:60%;
-	margin: 0 auto;
+	width:80%;
+	margin-left: 10%;
+	margin-right:10%;
 	padding-top:15px;
+	padding-bottom: 15px;
 	font-size:30px;
 	background: #ccc;
 	height: 700px;
 	font-family: 'Monaco', 'Courier New';
 	text-align: left;
-	font-size:16px;
+	font-size:15px;
 	color: #fafafa;
+	display:inline-flex;
 }
 
 #console{
-	width:80%;
-	padding: 10px;
-	height: 670px;
+	width:100%;
+	padding: 30px;
+	height: auto;
 	margin:0 auto;
 	background: #383737;
 }
