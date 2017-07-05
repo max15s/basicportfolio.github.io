@@ -29,7 +29,7 @@ body{
 
 .main_profile_box{
   width:35%;
-  min-width: 370px;
+  /*min-width: 370px;*/
   height: auto;
   background: rgba(0, 0, 0, 0.6);
   padding: 40px;
@@ -38,16 +38,6 @@ body{
   margin-top: 10px;
   text-align: center;
   border-radius: 10%;
-}
-
-@media (max-width: 1020px){
-	.main_profile_box{
-		/*width:50%;*/
-	}
-	
-	.main_scrolldown_box{
-		/*display:none;*/
-	}
 }
 
 .main_profile_avatar_box{
@@ -190,6 +180,18 @@ body{
 		opacity: 0;
 	}
 }
+
+@media (max-width: 730px){
+	.main_profile_box{
+		width:90%;
+		padding:20px;
+	}
+	
+	.main_scrolldown_box  a {
+		left:45%;
+	}
+}
+
 /**** END MAIN PROFILE PAGE STYLE ****/
 
 /**** NAVBAR WRAPPER ****/
@@ -741,7 +743,7 @@ p {
 }
 
 .exp-row{
-    justify-content: flex-end;
+    justify-content: center;
     display: flex;
 }
 
