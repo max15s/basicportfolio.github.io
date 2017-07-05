@@ -202,7 +202,7 @@ body{
 
 /**** NAVBAR WRAPPER ****/
 #header {
-	position: sticky;
+	position: sticky !important;
 	top: 0;
 	left: 0;
 	font-family: 'Montserrat', sans-serif;
