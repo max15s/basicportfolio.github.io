@@ -300,9 +300,6 @@ body{
 
 @media (max-width: 850px){
 	.myicon img{
-		display:inherit;
-		width: 40px;
-		height: 40px;
 	}
 	
 	.myicon span{
