@@ -364,7 +364,7 @@ body{
 	#header {
 		position: sticky;
 		padding-top: 20px;
-		text-align: left;
+		/*text-align: left;*/
 		/*padding-left: 10px;*/
 		padding-bottom: 15px;
 	}
@@ -379,8 +379,8 @@ body{
 
 	#header .nav {
 		display: inline-block;
-		width: 55%;
-		padding-right: 10px;
+		width: 100%;
+		/*padding-right: 10px;*/
 	}
 
 	li.mobile-header {
@@ -415,7 +415,7 @@ body{
 		position: sticky;
 		line-height: 10px;
 		padding-top: 20px;
-		text-align: left;
+		/*text-align: left;*/
 		/*padding-left: 10px;*/
 		padding-bottom: 10px;
 	}
@@ -427,8 +427,8 @@ body{
 	#header .nav {
 		display: inline-block;
 		/*float: left;*/
-		width: 55%;
-		padding-right: 10px;
+		width: 100%;
+		/*padding-right: 10px;*/
 	}
 
 	li.mobile-header {
