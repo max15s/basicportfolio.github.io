@@ -368,6 +368,10 @@ body{
 		padding-left: 10px;
 		padding-bottom: 15px;
 	}
+	
+	.myicon{
+		display:none;
+	}
 
 	#header .name {
 		width:40%;
@@ -407,6 +411,10 @@ body{
 		padding-bottom : 20px; 
 	}
 
+	.myicon{
+		display:none;
+	}
+	
 	#header {
 		position: sticky;
 		line-height: 10px;
