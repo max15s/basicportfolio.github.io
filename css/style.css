@@ -994,42 +994,46 @@ span.answer {
 }
 
 .project-title{
-	/*background-color: rgb(189, 219, 250);*/
-	background-color: white;
-    border-radius: 12px;
-    border: 2px solid rgb(132, 187, 243);
-    /*display: inline-block;*/
-    cursor: pointer;
-    /*color: rgb(255, 255, 255);*/
-    font-family: "Trebuchet MS";
-    font-size: 23px;
-    font-weight: bold;
-	padding: 12px;
-    padding-left: 10%;
-    text-decoration: none;
-	margin-left: 10%;
-	margin-right: 10%;
-}
-
-.project-title:hover,onclick{
 	background-color: #528fcc;
     border-radius: 12px;
+	color: white;
     border: 2px solid rgb(132, 187, 243);
-    /*display: inline-block;*/
     cursor: pointer;
-    color: rgb(255, 255, 255);
+	padding: 10px 0 10px 0;
     font-family: "Trebuchet MS";
     font-size: 23px;
     font-weight: bold;
-	padding: 12px;
-    padding-left: 10%;
     text-decoration: none;
 	margin-left: 10%;
 	margin-right: 10%;
+	text-align: center;
 }
 
-.project-title span{
-	padding-left: 5vh;
+.project-description{
+	background-color: white;
+    border-radius: 0 0 12px 12px;
+	margin-left: 13%;
+	margin-right: 13%;
+	padding: 10px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	font-size: 16px;
+}
+
+.project-keywords{
+	padding-bottom:10px;
+	font-weight:bold;
+}
+
+.project-summary{
+	
+}
+
+@media (max-width: 720px){
+	.projects-wrapper{
+		margin-left:0;
+		margin-right : 0;
+	}
 }
 /**** END PROJECT PAGE #4 ****/
 
