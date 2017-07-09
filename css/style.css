@@ -53,8 +53,8 @@ body{
 }
 
 .main_profile_box h1{
-  font-family: Papyrus, fantasy;
-  font-size: 40px;
+  font-family:'Rum Raisin';
+  font-size: 48px;
   letter-spacing: 0.1em;
   margin-top: 0px;
   margin-bottom: 5px;
@@ -64,14 +64,19 @@ body{
 	padding-top: 25px;
 	margin-bottom: 10px;
 	font-weight: 100;
+	font-size: 24px;
+	font-family:'Salsa';
 }
 
 .main_profile_box h3{
-  font-family:"Lucida Console";
+  font-family:'Salsa';
+  padding-bottom:10px;
+  font-size: 20px;
 }
 
 .main_profile_box p{
   letter-spacing: 1;
+  font-family:'Salsa';
 }
 
 .main_profile_social_icons{
@@ -190,7 +195,9 @@ body{
 @media (max-width: 740px){
 	.main_profile_box{
 		width:90%;
-		padding:20px;
+		padding:10px;
+		margin-left:10px;
+		margin-right:10px;
 		border-radius:5%;
 	}
 	
@@ -201,9 +208,7 @@ body{
 	.main_page{
 		background: url(../images/mainBackground.jpg) no-repeat center center scroll;
 	}
-}
-
-@media (max-height: 320px){
+	
 	.main_scrolldown_box{
 		display:none;
 	}
@@ -217,7 +222,8 @@ body{
 	position: sticky;
 	top: 0;
 	left: 0;
-	font-family: 'Montserrat', sans-serif;
+	/*font-family: 'Montserrat', sans-serif;*/
+	font-family: Aldrich;
 	text-transform: uppercase;
 	width: 100%;
 	background-color: #fafafa;
@@ -547,14 +553,14 @@ p {
 	line-height: 1.2;
     margin-bottom: 15px;
 	color: #333;
-	font-family: 'gotham rounded',sans-serif;
+	font-family: 'Annie Use Your Telescope';
+	font-weight:bold;
 }
 
 .heading-greeting{
-	font-family: raleway, helvetica, sans-serif;
 	line-height: inherit;
     font-weight: inherit;
-	font-size: 36px;
+	font-size: 50px;
 	display: inline-block;
     zoom: 1;
     max-width: 100%;
