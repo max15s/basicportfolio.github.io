@@ -827,14 +827,15 @@ p {
 .exp-item-title{
 	margin-bottom: 5px;
 	color: #678;
-	font-family: 'gotham rounded',sans-serif;
+	/*font-family: 'gotham rounded',sans-serif;*/
 }
 
 .exp-item-title h3{
-    font-family: "open sans", helvetica, sans-serif;
+    /*font-family: "open sans", helvetica, sans-serif;*/
+	font-family: 'Carrois Gothic SC',"Trebuchet MS";
     line-height: inherit;
-    font-weight: inherit;
-	font-size: 24px;
+    font-weight: bold;
+	font-size: 25px;
 	text-transform: none !important;
 	word-wrap: break-word;
 	-webkit-margin-before: 1em;
@@ -898,7 +899,8 @@ p {
 	/*padding: 80px 0;*/
     line-height: 1.45;
     color: #555;
-	font-family: "open sans", helvetica, sans-serif;
+	/*font-family: "open sans", helvetica, sans-serif;*/
+	font-family: 'Cabin', "Lucida Sans Typewriter", "Lucida Console", Monaco, "Bitstream Vera Sans Mono", monospace;
 	line-height: 1.45;
 	text-transform: none !important;
 	word-wrap: break-word;
@@ -934,8 +936,10 @@ p {
 		/*text-align: justify;*/
 	}
 }
-
 /**** END EXPERIENCE PAGE #2 ****/
+
+
+/**** SKILLS PAGE #3 ****/
 #console-wrapper{
 	border-radius: 5px;
 	width:80%;
@@ -943,11 +947,11 @@ p {
 	margin-right:10%;
 	padding-top:15px;
 	padding-bottom: 15px;
-	font-size:30px;
 	background: #ccc;
-	font-family: 'Monaco', 'Courier New';
+	font-family: Consolas, monaco, monospace;
+	/*font-family: 'Source Serif Pro';*/
 	text-align: left;
-	font-size:15px;
+	font-size:18px;
 	color: #fafafa;
 	display:inline-flex;
 }
@@ -972,10 +976,9 @@ p {
 }
 
 span.answer {
-  color:#ccc;
+  /*color:#ccc;*/
+  color: #FFBC24;
 }
-
-/**** SKILLS PAGE #3 ****/
 /**** END SKILLS PAGE #3 ****/
 
 
@@ -1003,7 +1006,7 @@ span.answer {
     border: 2px solid rgb(132, 187, 243);
     cursor: pointer;
 	padding: 10px 0 10px 0;
-    font-family: "Trebuchet MS";
+    font-family: 'Carrois Gothic SC',"Trebuchet MS";
     font-size: 23px;
     font-weight: bold;
     text-decoration: none;
@@ -1015,21 +1018,23 @@ span.answer {
 .project-description{
 	background-color: white;
     border-radius: 0 0 12px 12px;
+	font-family: 'Cabin', "Lucida Sans Typewriter", "Lucida Console", Monaco, "Bitstream Vera Sans Mono", monospace;
 	margin-left: 13%;
 	margin-right: 13%;
 	padding: 10px;
-	padding-top: 10px;
-	padding-bottom: 10px;
-	font-size: 16px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	font-size: 17px;
 }
 
 .project-keywords{
-	padding-bottom:10px;
+	padding-bottom:15px;
 	font-weight:bold;
+	line-height: 140%;
 }
 
 .project-summary{
-	
+	line-height: 140%;
 }
 
 @media (max-width: 720px){
