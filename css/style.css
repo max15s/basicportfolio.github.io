@@ -14,7 +14,8 @@ body{
 
 /**** MAIN PROFILE PAGE STYLE ****/
 .main_page{
-  background: url(../images/mainBackground.jpg) no-repeat center center fixed;
+  background: #6481b5 url(../images/mainBackground.jpg) no-repeat center center fixed;
+  /*background: #6481b5;*/
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -38,6 +39,20 @@ body{
   margin-top: 10px;
   text-align: center;
   border-radius: 10%;
+}
+
+.main_profile_box_coffee{
+	padding-top:100px;
+	width:35%;
+	height:40%;
+	z-index:2;
+	position:absolute;
+}
+
+.main_profile_box_cloud{
+	padding-left:13%;
+	z-index:1;
+	position:absolute;
 }
 
 .main_profile_avatar_box{
@@ -657,6 +672,11 @@ p {
 	padding-top: 15px;
     padding-bottom: 15px;
 	text-align: justify;
+}
+
+.aboutme-text p{
+	font-family: 'Cabin', "Lucida Sans Typewriter", "Lucida Console", Monaco, "Bitstream Vera Sans Mono", monospace;
+	line-height:120%;
 }
 
 .aboutme-2para{
