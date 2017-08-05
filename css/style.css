@@ -41,21 +41,6 @@ body{
   border-radius: 10%;
 }
 
-.main_profile_box_coffee{
-	padding-top:100px;
-	width:35%;
-	height:40%;
-	z-index:2;
-	position:absolute;
-}
-
-.main_profile_box_cloud{
-	padding-left:10%;
-	width:30%;
-	z-index:1;
-	position:absolute;
-}
-
 .main_profile_avatar_box{
   overflow: hidden;
   text-align: center;
