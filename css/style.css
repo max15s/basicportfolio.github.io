@@ -50,7 +50,8 @@ body{
 }
 
 .main_profile_box_cloud{
-	padding-left:13%;
+	padding-left:10%;
+	width:30%;
 	z-index:1;
 	position:absolute;
 }
