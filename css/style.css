@@ -14,7 +14,7 @@ body{
 
 /**** MAIN PROFILE PAGE STYLE ****/
 .main_page{
-  background: #6481b5 url(../images/mainBackground.jpg) no-repeat center center fixed;
+  background: #000 url(../images/mainBackground.jpg) no-repeat center center fixed;
   /*background: #6481b5;*/
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -654,13 +654,15 @@ p {
 	width:70%;
 	padding: 2px 16px;
 	display:inline-block;
-	font-size: 18px;
+	font-size: 16px;
 	padding-top: 15px;
     padding-bottom: 15px;
 	text-align: justify;
 }
 
 .aboutme-text p{
+	padding-left: 10px;
+	padding-right: 10px;
 	font-family: 'Cabin', "Lucida Sans Typewriter", "Lucida Console", Monaco, "Bitstream Vera Sans Mono", monospace;
 	line-height:120%;
 }
@@ -705,6 +707,7 @@ p {
 
 .education-wrapper{
 	display:inline-block;
+	font-family: 'Cabin', "Lucida Sans Typewriter", "Lucida Console", Monaco, "Bitstream Vera Sans Mono", monospace;
 	float:left;
 	width:70%;
 }
@@ -1010,7 +1013,7 @@ span.answer {
     border-radius: 12px;
 	color: white;
     border: 2px solid rgb(132, 187, 243);
-    cursor: pointer;
+    /*cursor: pointer;*/
 	padding: 10px 0 10px 0;
     font-family: 'Carrois Gothic SC',"Trebuchet MS";
     font-size: 23px;
