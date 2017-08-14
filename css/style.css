@@ -778,6 +778,7 @@ p {
 }
 
 .row-media-wrapper{
+	padding-top: 20px;
 	width: 20%;
 	max-width: 250px;
 	padding-left: 59px;
@@ -864,6 +865,7 @@ p {
     font-weight: normal;
     font-style: normal;
     font-size: 100%;
+	color: #37c;
 	font-family: inherit;
 	display: block;
     -webkit-margin-before: 1em;
@@ -965,6 +967,15 @@ p {
 	display:inline-flex;
 }
 
+#console{
+	width:100%;
+	padding: 30px 30px 30px 50px;
+	height: auto;
+	margin:0 auto;
+	background: #383737;
+	display: inline;
+}
+
 @media (max-width: 720px){
 	#console-wrapper{
 		width:95%;
@@ -973,15 +984,10 @@ p {
 		padding-left:0;
 		padding-right:0;
 	}
-}
-
-#console{
-	width:100%;
-	padding: 30px 30px 30px 50px;
-	height: auto;
-	margin:0 auto;
-	background: #383737;
-	display: inline;
+	
+	#console{
+		padding: 10px 30px 10px 30px;
+	}
 }
 
 span.answer {
